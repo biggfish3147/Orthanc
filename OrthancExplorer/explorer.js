@@ -431,13 +431,13 @@ $('#lookup').live('pagebeforeshow', function() {
   // NB: "GenerateDicomDate()" is defined in "query-retrieve.js"
   var target = $('#lookup-study-date');
   $('option', target).remove();
-  target.append($('<option>').attr('value', '*').text('Any date'));
-  target.append($('<option>').attr('value', GenerateDicomDate(0)).text('Today'));
-  target.append($('<option>').attr('value', GenerateDicomDate(-1)).text('Yesterday'));
-  target.append($('<option>').attr('value', GenerateDicomDate(-7) + '-').text('Last 7 days'));
-  target.append($('<option>').attr('value', GenerateDicomDate(-31) + '-').text('Last 31 days'));
-  target.append($('<option>').attr('value', GenerateDicomDate(-31 * 3) + '-').text('Last 3 months'));
-  target.append($('<option>').attr('value', GenerateDicomDate(-365) + '-').text('Last year'));
+  target.append($('<option>').attr('value', '*').text('任何日期'));
+  target.append($('<option>').attr('value', GenerateDicomDate(0)).text('今日'));
+  target.append($('<option>').attr('value', GenerateDicomDate(-1)).text('昨日'));
+  target.append($('<option>').attr('value', GenerateDicomDate(-7) + '-').text('最近一周'));
+  target.append($('<option>').attr('value', GenerateDicomDate(-31) + '-').text('最近一月'));
+  target.append($('<option>').attr('value', GenerateDicomDate(-31 * 3) + '-').text('最近三月'));
+  target.append($('<option>').attr('value', GenerateDicomDate(-365) + '-').text('最近一年'));
   target.selectmenu('refresh');
 
   $('#lookup-result').hide();
@@ -1403,15 +1403,15 @@ $('#jobs').live('pagebeforeshow', function() {
 
       running = $('<li>')
           .attr('data-role', 'list-divider')
-          .text('Currently running');
+          .text('正在进行');
 
       pending = $('<li>')
           .attr('data-role', 'list-divider')
-          .text('Pending jobs');
+          .text('待办任务');
 
       inactive = $('<li>')
           .attr('data-role', 'list-divider')
-          .text('Inactive jobs');
+          .text('不活跃的任务');
 
       target.append(running);
       target.append(pending);

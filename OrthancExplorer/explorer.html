@@ -38,62 +38,62 @@
 <body>
   <div data-role="page" id="lookup">
     <div data-role="header">
-      <h1><span class="orthanc-name"></span>Lookup studies</h1>
+      <h1><span class="orthanc-name"></span>查询病历</h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-right">
-        <a href="#upload" data-icon="gear" data-role="button">Upload</a>
-        <a href="#query-retrieve" data-icon="search" data-role="button">Query/Retrieve</a>
-        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">Jobs</a>
+        <a href="#upload" data-icon="gear" data-role="button">上传病历</a>
+        <a href="#query-retrieve" data-icon="search" data-role="button">检索</a>
+        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">任务</a>
       </div>
     </div>
     <div data-role="content">
       <div data-role="content" id="content" style="padding:0px">
         <p align="center">
-          <a href="http://www.orthanc-server.com/" target="_blank" alt="Orthanc homepage">
-            <img src="orthanc-logo.png" alt="Orthanc" style="max-width:100%" />
+          <a href="" target="_blank" alt="Orthanc homepage">
+            <img src="bupt-pacs.png" alt="Orthanc" style="max-width:100%" />
           </a>
         </p>
       </div>
       
       <form data-ajax="false" id="lookup-form">
         <div data-role="fieldcontain">
-          <label for="lookup-patient-id">Patient ID:</label>
+          <label for="lookup-patient-id">病人ID:</label>
           <input type="text" name="lookup-patient-id" id="lookup-patient-id" value="" />
         </div>
 
         <div data-role="fieldcontain">
-          <label for="lookup-patient-name">Patient Name:</label>
+          <label for="lookup-patient-name">姓名:</label>
           <input type="text" name="lookup-patient-name" id="lookup-patient-name" value="" />
         </div>
 
         <div data-role="fieldcontain">
-          <label for="lookup-accession-number">Accession Number:</label>
+          <label for="lookup-accession-number">检索号:</label>
           <input type="text" name="lookup-accession-number" id="lookup-accession-number" value="" />
         </div>
 
         <div data-role="fieldcontain">
-          <label for="lookup-study-description">Study Description:</label>
+          <label for="lookup-study-description">病历描述:</label>
           <input type="text" name="lookup-study-description" id="lookup-study-description" value="" />
         </div>
 
         <div data-role="fieldcontain">
-          <label for="lookup-study-date">Study Date:</label>
+          <label for="lookup-study-date">病历日期:</label>
           <select name="lookup-study-date" id="lookup-study-date">
           </select>
         </div>
 
         <fieldset class="ui-grid-b">
           <div class="ui-block-a">
-            <a href="#find-patients" data-role="button" data-theme="b" data-direction="reverse">All patients</a>
+            <a href="#find-patients" data-role="button" data-theme="b" data-direction="reverse">病人库</a>
           </div>
           <div class="ui-block-b">
-            <a href="#find-studies" data-role="button" data-theme="b" data-direction="reverse">All studies</a>
+            <a href="#find-studies" data-role="button" data-theme="b" data-direction="reverse">病历库</a>
           </div>
           <div class="ui-block-c">
-            <button id="lookup-submit" type="submit" data-theme="e">Do lookup</button>
+            <button id="lookup-submit" type="submit" data-theme="e">查询</button>
           </div>
         </fieldset>
         <div>&nbsp;</div>
@@ -116,15 +116,15 @@
 
   <div data-role="page" id="find-patients">
     <div data-role="header">
-      <h1><span class="orthanc-name"></span>All patients</h1>
+      <h1><span class="orthanc-name"></span>病人库</h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-right">
-        <a href="#upload" data-icon="gear" data-role="button">Upload</a>
-        <a href="#query-retrieve" data-icon="search" data-role="button">Query/Retrieve</a>
-        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">Jobs</a>
+        <a href="#upload" data-icon="gear" data-role="button">上传</a>
+        <a href="#query-retrieve" data-icon="search" data-role="button">检索</a>
+        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">任务</a>
       </div>
     </div>
     <div data-role="content">
@@ -144,15 +144,15 @@
 
   <div data-role="page" id="find-studies">
     <div data-role="header">
-      <h1><span class="orthanc-name"></span>All studies</h1>
+      <h1><span class="orthanc-name"></span>病历库</h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-right">
-        <a href="#upload" data-icon="gear" data-role="button">Upload</a>
-        <a href="#query-retrieve" data-icon="search" data-role="button">Query/Retrieve</a>
-        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">Jobs</a>
+        <a href="#upload" data-icon="gear" data-role="button">上传</a>
+        <a href="#query-retrieve" data-icon="search" data-role="button">检索</a>
+        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">任务</a>
       </div>
     </div>
     <div data-role="content">
@@ -172,10 +172,10 @@
 
   <div data-role="page" id="upload">
     <div data-role="header">
-      <h1><span class="orthanc-name"></span>Upload DICOM files</h1>
+      <h1><span class="orthanc-name"></span>上传Dicom文件</h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
     </div>
     <div data-role="content">
@@ -188,11 +188,11 @@
       <p>
         <ul data-role="listview" data-inset="true">
           <li id="fileupload-proxy" onclick="$('#fileupload').click()" data-icon="arrow-r" data-theme="e">
-            <a href="#">Select files to upload ...</a>
+            <a href="#">选择Dicom文件上传</a>
           </li>
-          <li data-icon="arrow-r" data-theme="e"><a href="#" id="upload-button">Start the upload</a></li>
+          <li data-icon="arrow-r" data-theme="e"><a href="#" id="upload-button">开始上传...</a></li>
           <!--li data-icon="gear" data-theme="e"><a href="#" id="upload-abort" class="ui-disabled">Abort the current upload</a></li-->
-          <li data-icon="delete" data-theme="d"><a href="#" id="upload-clear">Clear the pending uploads</a></li>
+          <li data-icon="delete" data-theme="d"><a href="#" id="upload-clear">清空已选择的Dicom文件</a></li>
         </ul>
         <div id="progress" class="ui-corner-all">
           <span class="bar ui-corner-all"></span>
@@ -206,22 +206,22 @@
         instead, or use the command-line "ImportDicomFiles.py" script.
       </div>
       <ul id="upload-list" data-role="listview" data-inset="true">
-        <li data-role="list-divider">Drag and drop DICOM files here</li>
+        <li data-role="list-divider">将Dicom文件拖拽到此处</li>
       </ul>
     </div>
   </div>
 
   <div data-role="page" id="patient">
     <div data-role="header">
-      <h1><span class="orthanc-name"></span>Patient</h1>
+      <h1><span class="orthanc-name"></span>病人</h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-right">
-        <a href="#upload" data-icon="gear" data-role="button">Upload</a>
-        <a href="#query-retrieve" data-icon="search" data-role="button">Query/Retrieve</a>
-        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">Jobs</a>
+        <a href="#upload" data-icon="gear" data-role="button">上传</a>
+        <a href="#query-retrieve" data-icon="search" data-role="button">检索</a>
+        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">任务</a>
       </div>
     </div>
     <div data-role="content">
@@ -272,17 +272,17 @@
     <div data-role="header">
       <h1>
         <span class="orthanc-name"></span>
-        <a href="#" class="patient-link">Patient</a> &raquo;
+        <a href="#" class="patient-link">病人</a> &raquo;
         Study
       </h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-right">
-        <a href="#upload" data-icon="gear" data-role="button">Upload</a>
-        <a href="#query-retrieve" data-icon="search" data-role="button">Query/Retrieve</a>
-        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">Jobs</a>
+        <a href="#upload" data-icon="gear" data-role="button">上传</a>
+        <a href="#query-retrieve" data-icon="search" data-role="button">检索</a>
+        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">任务</a>
       </div>
     </div>
     <div data-role="content">
@@ -326,18 +326,18 @@
     <div data-role="header">
       <h1>
         <span class="orthanc-name"></span>
-        <a href="#" class="patient-link">Patient</a> &raquo;
-        <a href="#" class="study-link">Study</a> &raquo;
-        Series
+        <a href="#" class="patient-link">病人</a> &raquo;
+        <a href="#" class="study-link">病历</a> &raquo;
+        序列
       </h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-right">
-        <a href="#upload" data-icon="gear" data-role="button">Upload</a>
-        <a href="#query-retrieve" data-icon="search" data-role="button">Query/Retrieve</a>
-        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">Jobs</a>
+        <a href="#upload" data-icon="gear" data-role="button">上传</a>
+        <a href="#query-retrieve" data-icon="search" data-role="button">检索</a>
+        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">任务</a>
       </div>
     </div>
     <div data-role="content">
@@ -382,19 +382,19 @@
     <div data-role="header">
       <h1>
         <span class="orthanc-name"></span>
-        <a href="#" class="patient-link">Patient</a> &raquo;
-        <a href="#" class="study-link">Study</a> &raquo;
-        <a href="#" class="series-link">Series</a> &raquo;
-        Instance
+        <a href="#" class="patient-link">病人</a> &raquo;
+        <a href="#" class="study-link">病历</a> &raquo;
+        <a href="#" class="series-link">序列</a> &raquo;
+        实例
       </h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-right">
-        <a href="#upload" data-icon="gear" data-role="button">Upload</a>
-        <a href="#query-retrieve" data-icon="search" data-role="button">Query/Retrieve</a>
-        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">Jobs</a>
+        <a href="#upload" data-icon="gear" data-role="button">上传</a>
+        <a href="#query-retrieve" data-icon="search" data-role="button">检索/a>
+        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">任务</a>
       </div>
     </div>
     <div data-role="content">
@@ -442,10 +442,10 @@
 
   <div data-role="page" id="plugins">
     <div data-role="header">
-      <h1><span class="orthanc-name"></span>Plugins</h1>
+      <h1><span class="orthanc-name"></span>插件</h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
     </div>
     <div data-role="content">
@@ -456,41 +456,41 @@
 
   <div data-role="page" id="query-retrieve">
     <div data-role="header">
-      <h1><span class="orthanc-name"></span>DICOM Query/Retrieve (1/4)</h1>
+      <h1><span class="orthanc-name"></span>DICOM 检索 (1/4)</h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
     </div>
     <div data-role="content">
       <form data-ajax="false">
         <div data-role="fieldcontain">
-          <label for="qr-server">DICOM server:</label>
+          <label for="qr-server">DICOM 服务器:</label>
           <select name="qr-server" id="qr-server">
           </select>
         </div>
 
         <div data-role="fieldcontain" id="qr-fields">
           <fieldset data-role="controlgroup">
-            <legend>Field of interest:</legend>
+            <legend>字段名称:</legend>
             <input type="radio" name="qr-field" id="qr-patient-id" value="PatientID" checked="checked" />
-            <label for="qr-patient-id">Patient ID</label>
+            <label for="qr-patient-id">病人ID</label>
             <input type="radio" name="qr-field" id="qr-patient-name" value="PatientName" />
-            <label for="qr-patient-name">Patient Name</label>
+            <label for="qr-patient-name">姓名</label>
             <input type="radio" name="qr-field" id="qr-accession-number" value="AccessionNumber" />
-            <label for="qr-accession-number">Accession Number</label>
+            <label for="qr-accession-number">检索号</label>
             <input type="radio" name="qr-field" id="qr-study-description" value="StudyDescription" />
-            <label for="qr-study-description">Study Description</label>
+            <label for="qr-study-description">病历描述</label>
           </fieldset>
         </div>
 
         <div data-role="fieldcontain">
-          <label for="qr-value">Value for this field:</label>
+          <label for="qr-value">字段值：</label>
           <input type="text" name="qr-value" id="qr-value" value="*" />
         </div>
 
         <div data-role="fieldcontain">
-          <label for="qr-date">Study date:</label>
+          <label for="qr-date">病历日期</label>
           <select name="qr-date" id="qr-date">
           </select>
         </div>
@@ -498,7 +498,7 @@
         <div data-role="fieldcontain" id="qr-modalities">
           <div data-role="fieldcontain">
             <fieldset data-role="controlgroup" data-type="horizontal">
-              <legend>Modalities:</legend>
+              <legend>类型:</legend>
               <input type="checkbox" name="CR" id="qr-cr" class="custom" /> <label for="qr-cr">CR</label>
               <input type="checkbox" name="CT" id="qr-ct" class="custom" /> <label for="qr-ct">CT</label>
               <input type="checkbox" name="MR" id="qr-mr" class="custom" /> <label for="qr-mr">MR</label>
@@ -515,10 +515,10 @@
 
         <fieldset class="ui-grid-a">
           <div class="ui-block-a">
-            <button id="qr-echo" data-theme="a">Test Echo</button>
+            <button id="qr-echo" data-theme="a">测试输出</button>
           </div>
           <div class="ui-block-b">
-            <button id="qr-submit" type="submit" data-theme="b">Search studies</button>
+            <button id="qr-submit" type="submit" data-theme="b">寻找病历</button>
           </div>
         </fieldset>
       </form>
@@ -528,12 +528,12 @@
 
   <div data-role="page" id="query-retrieve-2">
     <div data-role="header">
-      <h1><span class="orthanc-name"></span>DICOM Query/Retrieve (2/4)</h1>
+      <h1><span class="orthanc-name"></span>DICOM 检索 (2/4)</h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
-      <a href="#query-retrieve" data-icon="search" class="ui-btn-right" data-direction="reverse">Query/Retrieve</a>
+      <a href="#query-retrieve" data-icon="search" class="ui-btn-right" data-direction="reverse">检索</a>
     </div>
     <div data-role="content">
       <ul data-role="listview" data-inset="true" data-filter="true" data-split-icon="arrow-d" data-split-theme="b">
@@ -544,12 +544,12 @@
 
   <div data-role="page" id="query-retrieve-3">
     <div data-role="header">
-      <h1><span class="orthanc-name"></span>DICOM Query/Retrieve (3/4)</h1>
+      <h1><span class="orthanc-name"></span>DICOM 检索 (3/4)</h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
-      <a href="#query-retrieve" data-icon="search" class="ui-btn-right" data-direction="reverse">Query/Retrieve</a>
+      <a href="#query-retrieve" data-icon="search" class="ui-btn-right" data-direction="reverse">检索</a>
     </div>
     <div data-role="content">
       <ul data-role="listview" data-inset="true" data-filter="true">
@@ -560,25 +560,25 @@
 
   <div data-role="page" id="query-retrieve-4">
     <div data-role="header">
-      <h1><span class="orthanc-name"></span>DICOM Query/Retrieve (4/4)</h1>
+      <h1><span class="orthanc-name"></span>DICOM 检索 (4/4)</h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
-      <a href="#query-retrieve" data-icon="search" class="ui-btn-right" data-direction="reverse">Query/Retrieve</a>
+      <a href="#query-retrieve" data-icon="search" class="ui-btn-right" data-direction="reverse">检索</a>
     </div>
 
     <div data-role="content">
       <form data-ajax="false" id="retrieve-form">
         <div data-role="fieldcontain">
-          <label for="retrieve-target">Target AET:</label>
+          <label for="retrieve-target">目标 AET:</label>
           <input type="text" name="retrieve-target" id="retrieve-target"></input>
         </div>
 
         <fieldset class="ui-grid-b">
           <div class="ui-block-a"></div>
           <div class="ui-block-b">
-            <button id="retrieve-submit" type="submit" data-theme="b">Retrieve</button>
+            <button id="retrieve-submit" type="submit" data-theme="b">检索</button>
           </div>
           <div class="ui-block-c"></div>
         </fieldset>
@@ -589,10 +589,10 @@
 
   <div data-role="page" id="jobs">
     <div data-role="header">
-      <h1><span class="orthanc-name"></span>Jobs</h1>
+      <h1><span class="orthanc-name"></span>任务</h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
     </div>
     <div data-role="content">
@@ -603,13 +603,13 @@
 
   <div data-role="page" id="job">
     <div data-role="header">
-      <h1><span class="orthanc-name"></span>Job</h1>
+      <h1><span class="orthanc-name"></span>任务</h1>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-left">
-        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">Lookup</a>
-        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">Plugins</a>
+        <a href="#lookup" data-icon="arrow-r" data-role="button" data-direction="reverse">查询</a>
+        <a href="#plugins" data-icon="grid" data-role="button" data-direction="reverse">插件</a>
       </div>
       <div data-type="horizontal" data-role="controlgroup" class="ui-btn-right">
-        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">Jobs</a>
+        <a href="#jobs" data-icon="refresh" data-role="button" data-direction="reverse">任务</a>
       </div>
     </div>
     <div data-role="content">
@@ -619,10 +619,10 @@
       <fieldset class="ui-grid-b">
         <div class="ui-block-a"></div>
         <div class="ui-block-b">
-          <button id="job-cancel" data-theme="b">Cancel job</button>
-          <button id="job-resubmit" data-theme="b">Resubmit job</button>
-          <button id="job-pause" data-theme="b">Pause job</button>
-          <button id="job-resume" data-theme="b">Resume job</button>
+          <button id="job-cancel" data-theme="b">取消任务</button>
+          <button id="job-resubmit" data-theme="b">提交任务</button>
+          <button id="job-pause" data-theme="b">暂停任务</button>
+          <button id="job-resume" data-theme="b">继续任务</button>
         </div>
         <div class="ui-block-c"></div>
       </fieldset>
@@ -649,14 +649,10 @@
 
   <div id="template-insecure" style="display:none">
     <div class="warning-insecure ui-body ui-body-e">
-      <h1>Insecure setup</h1>
+      <h1>设定不安全</h1>
       <p>
-        Your Orthanc server is accepting remote connections, but is
-	using the default username and password, or has user
-	authentication explicitly turned off. Please carefully read
-	your logs and review your configuration, especially
-	options <tt>RemoteAccessAllowed</tt>, <tt>AuthenticationEnabled</tt>,
-	and <tt>RegisteredUsers</tt>.
+        您的Orthanc服务器正在接受远程连接，但是正在使用默认的用户名和密码，或者用户身份验证已明确关闭。 
+        请仔细阅读日志并查看您的配置，尤其是选项RemoteAccessAllowed，AuthenticationEnabled和RegisteredUsers。
       </p>
     </div>
   </div>

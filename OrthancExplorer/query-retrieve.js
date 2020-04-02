@@ -38,13 +38,13 @@ $('#query-retrieve').live('pagebeforeshow', function() {
 
   targetDate = $('#qr-date');
   $('option', targetDate).remove();
-  targetDate.append($('<option>').attr('value', '*').text('Any date'));
-  targetDate.append($('<option>').attr('value', GenerateDicomDate(0)).text('Today'));
-  targetDate.append($('<option>').attr('value', GenerateDicomDate(-1)).text('Yesterday'));
-  targetDate.append($('<option>').attr('value', GenerateDicomDate(-7) + '-').text('Last 7 days'));
-  targetDate.append($('<option>').attr('value', GenerateDicomDate(-31) + '-').text('Last 31 days'));
-  targetDate.append($('<option>').attr('value', GenerateDicomDate(-31 * 3) + '-').text('Last 3 months'));
-  targetDate.append($('<option>').attr('value', GenerateDicomDate(-365) + '-').text('Last year'));
+  targetDate.append($('<option>').attr('value', '*').text('任何日期'));
+  targetDate.append($('<option>').attr('value', GenerateDicomDate(0)).text('今日'));
+  targetDate.append($('<option>').attr('value', GenerateDicomDate(-1)).text('昨日'));
+  targetDate.append($('<option>').attr('value', GenerateDicomDate(-7) + '-').text('最近一周'));
+  targetDate.append($('<option>').attr('value', GenerateDicomDate(-31) + '-').text('最近一月'));
+  targetDate.append($('<option>').attr('value', GenerateDicomDate(-31 * 3) + '-').text('最近三月'));
+  targetDate.append($('<option>').attr('value', GenerateDicomDate(-365) + '-').text('最近一年'));
   targetDate.selectmenu('refresh');
 });
 
